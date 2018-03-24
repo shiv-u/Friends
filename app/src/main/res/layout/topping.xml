@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/beans"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toppings :"
+        android:id="@+id/toppings"
+        android:textColor="@android:color/black"
+        android:textStyle="italic"
+        android:fontFamily="cursive"
+        android:paddingBottom="30dp"
+        android:textSize="60sp"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toppings"
+        android:textColor="@android:color/black"
+        android:id="@+id/whipped"
+        android:background="@drawable/background"
+        android:textSize="25sp"
+        android:paddingTop="10dp"
+        android:paddingLeft="24dp"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="30dp"
+        android:text="Whipped"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/whipped"
+        android:textColor="@android:color/black"
+        android:id="@+id/nutmeg"
+        android:background="@drawable/background"
+        android:textSize="25sp"
+        android:paddingTop="10dp"
+        android:paddingLeft="24dp"
+        android:layout_marginBottom="30dp"
+
+        android:paddingBottom="10dp"
+        android:text="Nutmeg"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nutmeg"
+        android:textColor="@android:color/black"
+        android:id="@+id/chocolate"
+        android:background="@drawable/background"
+        android:textSize="25sp"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="30dp"
+
+        android:paddingLeft="24dp"
+        android:paddingBottom="10dp"
+        android:text="Chocolate"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chocolate"
+        android:textColor="@android:color/black"
+        android:id="@+id/icecream"
+        android:background="@drawable/background"
+        android:textSize="25sp"
+        android:paddingTop="10dp"
+        android:paddingLeft="24dp"
+        android:paddingBottom="10dp"
+        android:text="IceCream"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="39dp"
+        android:background="@drawable/background"
+        android:text="Order"
+        android:fontFamily="cursive"
+        android:onClick="sum"
+        android:textSize="20sp"
+        android:layout_marginLeft="138dp"
+        android:layout_marginStart="138dp" />
+
+</RelativeLayout>
